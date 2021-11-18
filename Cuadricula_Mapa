@@ -1,0 +1,20 @@
+package mapeado;
+
+public class Cuacricula_Mapa {
+    private String [][]cuadricula;
+    int densidad;
+    
+    public Cuacricula_Mapa(int longitud, int latitud,int densidad) {
+   	 cuadricula=new String[longitud][latitud];
+   	 this.densidad=densidad;
+    }
+    
+    public void aleatorio() {
+   	 int array1;
+   	 int array2;
+   	 for (int cont=0;cont <500;cont++) {
+   		 array1=(int)(Math.random() * (cuadricula.length));
+   		 array2=(int)(Math.random() * (cuadricula[0].length));
+   	 }
+    }
+}
